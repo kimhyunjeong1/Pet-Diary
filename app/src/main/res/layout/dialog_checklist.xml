@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- 체크리스트 -->
+        <CheckBox
+            android:id="@+id/vaccination_check_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="예방접종" />
+
+        <CheckBox
+            android:id="@+id/checkup_check_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="정기검진" />
+
+        <CheckBox
+            android:id="@+id/bath_check_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="목욕관리" />
+
+        <CheckBox
+            android:id="@+id/medication_check_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="의약품 복용" />
+
+        <CheckBox
+            android:id="@+id/deworming_check_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="구충제 섭취" />
+
+        <!-- 텍스트 입력 -->
+        <EditText
+            android:id="@+id/feeding_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="식사관리"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/toilet_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="배변기록"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/activity_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="활동관리"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- 상단 영역 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp">
+
+            <!-- 텍스트 영역 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!-- 반려동물 정보 -->
+                <TextView
+                    android:id="@+id/pet_info_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="반려동물 정보"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- 다가오는 일정 -->
+                <TextView
+                    android:id="@+id/upcoming_schedule_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="다가오는 일정"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- 건강 팁 -->
+                <TextView
+                    android:id="@+id/health_tip_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="건강 팁"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- 이미지 영역 -->
+            <ImageView
+                android:id="@+id/pet_image_view"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="반려동물 이미지"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_placeholder"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
+
+        <!-- 주요 기능 버튼 -->
+        <Button
+            android:id="@+id/profile_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="프로필 보기"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/schedule_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="일정 관리" />
+    </LinearLayout>
+</ScrollView>

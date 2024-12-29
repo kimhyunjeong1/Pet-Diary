@@ -1,0 +1,102 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- 선택된 이미지를 표시하는 ImageView -->
+        <ImageView
+            android:id="@+id/pet_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:contentDescription="Pet Image"
+            android:scaleType="centerCrop"
+            android:background="#CCCCCC"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 이미지 업로드 버튼 -->
+        <Button
+            android:id="@+id/upload_image_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이미지 업로드"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- 반려동물 이름 -->
+        <EditText
+            android:id="@+id/pet_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="반려동물 이름"
+            android:layout_marginBottom="16dp"
+            android:inputType="textPersonName" />
+
+        <!-- 반려동물 품종 -->
+        <EditText
+            android:id="@+id/pet_breed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="품종"
+            android:layout_marginBottom="16dp"
+            android:inputType="text" />
+
+        <!-- 반려동물 생일 -->
+        <EditText
+            android:id="@+id/pet_birthday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="생일 (예: 2024-01-01)"
+            android:layout_marginBottom="16dp"
+            android:inputType="date" />
+
+        <!-- 반려동물 성별 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="성별"
+            android:layout_marginBottom="8dp"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/pet_gender_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/gender_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="수컷" />
+
+            <RadioButton
+                android:id="@+id/gender_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="암컷" />
+        </RadioGroup>
+
+        <!-- 반려동물 성격 -->
+        <EditText
+            android:id="@+id/pet_personality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="성격 (예: 활발함, 온순함 등)"
+            android:layout_marginBottom="24dp"
+            android:inputType="text" />
+
+        <!-- 저장 버튼 -->
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="저장하기" />
+    </LinearLayout>
+</ScrollView>
